@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Adjective Declension: Concise Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Chosen Palette: Warm Neutrals with Subtle Accents */
+        /* Background: #FDFBF8 (almost white, warm off-white) */
+        /* Primary Text: #333333 */
+        /* Table Headers/Borders: #7A7A7A */
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #FDFBF8; /* Warm off-white background */
+            color: #333333;
+        }
+        .table-header {
+            background-color: #F0F0F0; /* Light grey for headers */
+            color: #444444;
+        }
+        .table-row-even {
+            background-color: #FFFFFF;
+        }
+        .table-row-odd {
+            background-color: #F9F9F9;
+        }
+        /* Chart Container Styling - Not directly used for this static table, but included for completeness as per instructions */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Example max-width */
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; /* Base height */
+            max-height: 400px; /* Max height */
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <!-- Application Structure Plan: The application is now structured as a single, comprehensive table. This tabular format was chosen to provide a highly concise and easily scannable reference for German adjective declension, directly addressing the user's request to remove all explanatory text and mnemonics, and to focus solely on the core data points (case, gender/number, article type, and the example phrase). This structure prioritizes quick lookup and direct comparison of endings. -->
+    <!-- Visualization & Content Choices: The information is presented purely as structured text within an HTML table. No charts or complex visualizations are used, as the content is linguistic data best conveyed in a tabular format for direct comparison. NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <div class="max-w-6xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-gray-800">German Adjective Declension: Concise Table</h1>
+
+        <div class="overflow-x-auto rounded-lg shadow-md">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="table-header">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Case</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Gender/Number</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Article Type</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Example Phrase</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <!-- Nominative Case -->
+                    <tr class="table-row-even">
+                        <td rowspan="8" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Nominative</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">der alte Mann</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">ein alter Mann</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">die alte Frau</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">eine alte Frau</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">das alte Kind</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">ein altes Kind</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">die alten Leute</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">alte Leute</td>
+                    </tr>
+
+                    <!-- Accusative Case -->
+                    <tr class="table-row-even">
+                        <td rowspan="8" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Accusative</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">den alten Mann</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">einen alten Mann</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">die alte Frau</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">eine alte Frau</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">das alte Kind</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">ein altes Kind</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">die alten Leute</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">alte Leute</td>
+                    </tr>
+
+                    <!-- Dative Case -->
+                    <tr class="table-row-even">
+                        <td rowspan="8" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Dative</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">dem alten Mann</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">einem alten Mann</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">der alten Frau</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">einer alten Frau</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">dem alten Kind</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">einem alten Kind</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">den alten Leuten</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">alten Leuten</td>
+                    </tr>
+
+                    <!-- Genitive Case -->
+                    <tr class="table-row-even">
+                        <td rowspan="8" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Genitive</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">des alten Mannes</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Masculine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">eines alten Mannes</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">der alten Frau</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Feminine</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">einer alten Frau</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">des alten Kindes</td>
+                    </tr>
+                    <tr class="table-row-even">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Neuter</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">eines alten Kindes</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Definite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">der alten Leute</td>
+                    </tr>
+                    <tr class="table-row-odd">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Plural</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Indefinite</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">alter Leute</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
