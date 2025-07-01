@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Adjective Declension: Definite and Indefinite Articles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Chosen Palette: Warm Neutrals with Subtle Accents */
+        /* Background: #FDFBF8 (almost white, warm off-white) */
+        /* Primary Text: #333333 */
+        /* Secondary Text/Subtle Borders: #7A7A7A */
+        /* Accent Colors for Cards (derived from original suggestion, softened): */
+        /* Masculine: #E0F2F7 (light blue) */
+        /* Feminine: #FBE4EC (light pink) */
+        /* Neuter: #E8F5E9 (light green) */
+        /* Plural: #FFFDE7 (light yellow) */
+        /* Highlight for Endings: #B30000 (deep red for emphasis) */
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #FDFBF8; /* Warm off-white background */
+            color: #333333;
+        }
+        .card-ending {
+            color: #B30000; /* Deep red for emphasis */
+            font-weight: bold;
+        }
+        /* Chart Container Styling - Not directly used for this static card display, but included for completeness as per instructions */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Example max-width */
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; /* Base height */
+            max-height: 400px; /* Max height */
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
+    <!-- Application Structure Plan: The application is structured as a series of thematic sections, each representing a grammatical case (Nominative, Accusative, Dative, Genitive), duplicated for definite and indefinite articles. Within each case and article type section, information is further organized into "cards" for Masculine, Feminine, Neuter, and Plural. This structure was chosen to provide a clear, logical progression through the declension rules, allowing users to focus on one case and article type at a time while easily comparing endings across genders and numbers. The lack of interactive elements in this version is intentional, as the user requested a comprehensive display of "cards" for every definite and indefinite case, implying a static, complete reference rather than a dynamic trainer. This design prioritizes direct reference and visual learning. -->
+    <!-- Visualization & Content Choices: The core information (adjective endings, example phrases, and mnemonics) is presented using structured HTML and Tailwind CSS for layout. No charts or complex visualizations are used as the content is primarily linguistic rules and examples, best conveyed through clear text and organized sections. The "cards" themselves serve as visual units for each declension rule. Color-coding for gender/plural (light blue for masculine, light pink for feminine, light green for neuter, light yellow for plural) enhances visual distinction and aids memorization. The mnemonics are concise textual cues. NO SVG graphics used. NO Mermaid JS used. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <div class="max-w-6xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-gray-800">German Adjective Declension: Definite and Indefinite Articles</h1>
+        <p class="text-center text-lg mb-10 text-gray-600">
+            This page provides a comprehensive overview of adjective endings with **definite articles** (der, die, das) and **indefinite articles** (ein, eine) in all four cases. Each card shows an example, the correct ending, and a mnemonic to aid memorization.
+        </p>
+
+        <!-- Definite Articles Section -->
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 mt-12 text-gray-800">Definite Articles (der, die, das)</h2>
+
+        <!-- Nominative Case Section (Definite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Nominative (Who or What?)</h2>
+            <p class="mb-6 text-gray-600">
+                The nominative is the basic case of the subject. Adjective endings here are often "weak" because the definite article does most of the work.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Nominative -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (der)</h3>
+                    <p class="text-2xl font-bold mb-2">der alt<span class="card-ending">-e</span> Mann</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – The article "der" is strong and indicates gender and case, allowing the adjective to take the easy way out.</p>
+                </div>
+                <!-- Feminine Nominative -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (die)</h3>
+                    <p class="text-2xl font-bold mb-2">die alt<span class="card-ending">-e</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – The article "die" is strong and does the work, allowing the adjective to take the easy way out.</p>
+                </div>
+                <!-- Neuter Nominative -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (das)</h3>
+                    <p class="text-2xl font-bold mb-2">das alt<span class="card-ending">-e</span> Kind</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – The article "das" is strong and does the work, allowing the adjective to take the easy way out.</p>
+                </div>
+                <!-- Plural Nominative -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (die)</h3>
+                    <p class="text-2xl font-bold mb-2">die alt<span class="card-ending">-en</span> Leute</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – All plural adjective endings with an article are "-en". It's the most common ending, so it endures!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accusative Case Section (Definite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Accusative (Whom or What?)</h2>
+            <p class="mb-6 text-gray-600">
+                The accusative is the case of the direct object. Pay attention to the change in the masculine gender.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Accusative -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (den)</h3>
+                    <p class="text-2xl font-bold mb-2">den alt<span class="card-ending">-en</span> Mann</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – The masculine accusative is the "N-case" in German, so "-en" fits well.</p>
+                </div>
+                <!-- Feminine Accusative -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (die)</h3>
+                    <p class="text-2xl font-bold mb-2">die alt<span class="card-ending">-e</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – Feminine remains the same in accusative as in nominative, so it's easy.</p>
+                </div>
+                <!-- Neuter Accusative -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (das)</h3>
+                    <p class="text-2xl font-bold mb-2">das alt<span class="card-ending">-e</span> Kind</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – Neuter remains the same in accusative as in nominative, so it's easy.</p>
+                </div>
+                <!-- Plural Accusative -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (die)</h3>
+                    <p class="text-2xl font-bold mb-2">die alt<span class="card-ending">-en</span> Leute</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – Plural adjectives always take "-en" in the accusative.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dative Case Section (Definite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Dative (To Whom or What?)</h2>
+            <p class="mb-6 text-gray-600">
+                The dative is the case of the indirect object. Here, adjective endings are consistent for all genders and the plural.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Dative -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (dem)</h3>
+                    <p class="text-2xl font-bold mb-2">dem alt<span class="card-ending">-en</span> Mann</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the dative, "-en" is the predominant ending for all genders.</p>
+                </div>
+                <!-- Feminine Dative -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (der)</h3>
+                    <p class="text-2xl font-bold mb-2">der alt<span class="card-ending">-en</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the dative, "-en" is the predominant ending for all genders.</p>
+                </div>
+                <!-- Neuter Dative -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (dem)</h3>
+                    <p class="text-2xl font-bold mb-2">dem alt<span class="card-ending">-en</span> Kind</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the dative, "-en" is the predominant ending for all genders.</p>
+                </div>
+                <!-- Plural Dative -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (den)</h3>
+                    <p class="text-2xl font-bold mb-2">den alt<span class="card-ending">-en</span> Leuten</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – Plural adjectives always take "-en" in the dative.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genitive Case Section (Definite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Genitive (Whose?)</h2>
+            <p class="mb-6 text-gray-600">
+                The genitive indicates possession or belonging. Here too, adjective endings are consistent for most genders and the plural.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Genitive -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (des)</h3>
+                    <p class="text-2xl font-bold mb-2">des alt<span class="card-ending">-en</span> Mannes</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the genitive, "-en" is the predominant ending for all genders.</p>
+                </div>
+                <!-- Feminine Genitive -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (der)</h3>
+                    <p class="text-2xl font-bold mb-2">der alt<span class="card-ending">-en</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the genitive, "-en" is the predominant ending for all genders.</p>
+                </div>
+                <!-- Neuter Genitive -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (des)</h3>
+                    <p class="text-2xl font-bold mb-2">des alt<span class="card-ending">-en</span> Kindes</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the genitive, "-en" is the predominant ending for all genders.</p>
+                </div>
+                <!-- Plural Genitive -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (der)</h3>
+                    <p class="text-2xl font-bold mb-2">der alt<span class="card-ending">-en</span> Leute</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – Plural adjectives always take "-en" in the genitive.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Indefinite Articles Section -->
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 mt-12 text-gray-800">Indefinite Articles (ein, eine)</h2>
+        <p class="text-center text-lg mb-10 text-gray-600">
+            This section shows adjective endings with **indefinite articles** (ein, eine). Note that the indefinite article does not exist in the plural; here, the strong declension (without an article) is used.
+        </p>
+
+        <!-- Nominative Case Section (Indefinite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Nominative (Who or What?)</h2>
+            <p class="mb-6 text-gray-600">
+                In the nominative with indefinite articles, adjective endings often indicate the gender when the article does not.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Nominative Indefinite -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (ein)</h3>
+                    <p class="text-2xl font-bold mb-2">ein alt<span class="card-ending">-er</span> Mann</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "STRONG R" – The article "ein" does not indicate the gender here, so the adjective must be strong and take "-er".</p>
+                </div>
+                <!-- Feminine Nominative Indefinite -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (eine)</h3>
+                    <p class="text-2xl font-bold mb-2">eine alt<span class="card-ending">-e</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – The article "eine" indicates the gender, so the adjective can take it easy.</p>
+                </div>
+                <!-- Neuter Nominative Indefinite -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (ein)</h3>
+                    <p class="text-2xl font-bold mb-2">ein alt<span class="card-ending">-es</span> Kind</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "ESS-ENTIAL S" – The article "ein" does not indicate the gender here, so the adjective must be strong and take "-es".</p>
+                </div>
+                <!-- Plural Nominative Indefinite (No Article) -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (No Article)</h3>
+                    <p class="text-2xl font-bold mb-2">alt<span class="card-ending">-e</span> Leute</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – Without an article in the plural (nominative/accusative), the ending is often "-e".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accusative Case Section (Indefinite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Accusative (Whom or What?)</h2>
+            <p class="mb-6 text-gray-600">
+                The accusative with indefinite articles. Here too, the masculine case requires special attention.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Accusative Indefinite -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (einen)</h3>
+                    <p class="text-2xl font-bold mb-2">einen alt<span class="card-ending">-en</span> Mann</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – Masculine accusative is always "-en", regardless of whether it's a definite or indefinite article.</p>
+                </div>
+                <!-- Feminine Accusative Indefinite -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (eine)</h3>
+                    <p class="text-2xl font-bold mb-2">eine alt<span class="card-ending">-e</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – Feminine remains the same in accusative as in nominative, so it's easy.</p>
+                </div>
+                <!-- Neuter Accusative Indefinite -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (ein)</h3>
+                    <p class="text-2xl font-bold mb-2">ein alt<span class="card-ending">-es</span> Kind</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "ESS-ENTIAL S" – Neuter remains the same in accusative as in nominative, so it's easy.</p>
+                </div>
+                <!-- Plural Accusative Indefinite (No Article) -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (No Article)</h3>
+                    <p class="text-2xl font-bold mb-2">alt<span class="card-ending">-e</span> Leute</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EASY E" – Without an article in the plural (nominative/accusative), the ending is often "-e".</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dative Case Section (Indefinite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Dative (To Whom or What?)</h2>
+            <p class="mb-6 text-gray-600">
+                In the dative with indefinite articles, adjectives almost always take the "-en" ending.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Dative Indefinite -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (einem)</h3>
+                    <p class="text-2xl font-bold mb-2">einem alt<span class="card-ending">-en</span> Mann</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – "-en" is the standard ending in the dative after indefinite articles.</p>
+                </div>
+                <!-- Feminine Dative Indefinite -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (einer)</h3>
+                    <p class="text-2xl font-bold mb-2">einer alt<span class="card-ending">-en</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – "-en" is the standard ending in the dative after indefinite articles.</p>
+                </div>
+                <!-- Neuter Dative Indefinite -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (einem)</h3>
+                    <p class="text-2xl font-bold mb-2">einem alt<span class="card-ending">-en</span> Kind</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – "-en" is the standard ending in the dative after indefinite articles.</p>
+                </div>
+                <!-- Plural Dative Indefinite (No Article) -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (No Article)</h3>
+                    <p class="text-2xl font-bold mb-2">alt<span class="card-ending">-en</span> Leuten</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – In the dative plural, the ending is always "-en", even without an article.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Genitive Case Section (Indefinite) -->
+        <section class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-6 pb-2 border-b-2 border-gray-200 text-gray-700">Genitive (Whose?)</h2>
+            <p class="mb-6 text-gray-600">
+                The genitive with indefinite articles. Adjectives here mostly take the "-en" ending.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Masculine Genitive Indefinite -->
+                <div class="bg-[#E0F2F7] p-6 rounded-lg shadow-md border border-blue-200">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-800">Masculine (eines)</h3>
+                    <p class="text-2xl font-bold mb-2">eines alt<span class="card-ending">-en</span> Mannes</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – "-en" is the standard ending in the genitive after indefinite articles.</p>
+                </div>
+                <!-- Feminine Genitive Indefinite -->
+                <div class="bg-[#FBE4EC] p-6 rounded-lg shadow-md border border-pink-200">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-800">Feminine (einer)</h3>
+                    <p class="text-2xl font-bold mb-2">einer alt<span class="card-ending">-en</span> Frau</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – "-en" is the standard ending in the genitive after indefinite articles.</p>
+                </div>
+                <!-- Neuter Genitive Indefinite -->
+                <div class="bg-[#E8F5E9] p-6 rounded-lg shadow-md border border-green-200">
+                    <h3 class="text-xl font-semibold mb-3 text-green-800">Neuter (eines)</h3>
+                    <p class="text-2xl font-bold mb-2">eines alt<span class="card-ending">-en</span> Kindes</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "EN-DURING N" – "-en" is the standard ending in the genitive after indefinite articles.</p>
+                </div>
+                <!-- Plural Genitive Indefinite (No Article) -->
+                <div class="bg-[#FFFDE7] p-6 rounded-lg shadow-md border border-yellow-200">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-800">Plural (No Article)</h3>
+                    <p class="text-2xl font-bold mb-2">alt<span class="card-ending">-er</span> Leute</p>
+                    <p class="text-gray-700"><strong>Mnemonic:</strong> "STRONG R" – In the genitive plural without an article, the ending is "-er".</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
